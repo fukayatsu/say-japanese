@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = Say::Japanese::VERSION
   spec.authors       = ["fukayatsu"]
   spec.email         = ["fukayatsu@gmail.com"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
+  spec.description   = %q{Say in japanese (using say-command on MacOSX)}
+  spec.summary       = %q{Say in japanese (using say-command on MacOSX)}
   spec.homepage      = ""
   spec.license       = "MIT"
 

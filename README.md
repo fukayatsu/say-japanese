@@ -1,6 +1,11 @@
 # Say::Japanese
 
-TODO: Write a gem description
+Say in japanese (using say-command on MacOSX)
+
+## Requirements
+- MacOSX 10.7(Lion) or later
+- Voice data: `Kyoko` or `Otoya`
+    - [How to Add New Voices to Mac OS X](http://osxdaily.com/2011/07/25/how-to-add-new-voices-to-mac-os-x/)
 
 ## Installation
 
@@ -18,7 +23,26 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+require 'say/japanese'
+
+say 'オブジェクト指向スクリプト言語 ルビー'
+
+set_say_as_default :otoya
+
+say 'オブジェクト指向スクリプト言語 ルビー'
+
+say_as :kyoko, 'ルビーとは、'
+
+say_as :otoya, <<EOT
+  オープンソースの動的なプログラミング言語で、
+  シンプルさと高い生産性を備えています。
+  エレガントな文法を持ち、自然に読み書きができます。
+EOT
+
+
+
+```
 
 ## Contributing
 
